@@ -1,0 +1,1000 @@
+ 1062  ./backup.sh 
+ 1063  vim backup.sh 
+ 1064  ./backup.sh 
+ 1065  vim backup.sh 
+ 1066  ./backup.sh 
+ 1067  vim backup.sh 
+ 1068  ./backup.sh 
+ 1069  vim backup.sh 
+ 1070  ./backup.sh 
+ 1071  vim backup.sh 
+ 1072  ./backup.sh 
+ 1073  vim backup.sh 
+ 1074  ./backup.sh 
+ 1075  vim backup.sh 
+ 1076  ls
+ 1077  ls -t
+ 1078  cd backup_dir/
+ 1079  ls -t
+ 1080  ls -t | head {6..*}
+ 1081  ls -t | head -{6..*}
+ 1082  head
+ 1083  ls -t | head -[6..*]
+ 1084  ls -t | head [6..*]
+ 1085  ls -t | head [6..]
+ 1086  ls -t | head [6..7]
+ 1087  ls -t 
+ 1088  ls -t .drop(5)
+ 1089  vim backup.sh 
+ 1090  cd ..
+ 1091  vim backup.sh 
+ 1092  vim backup.sh 
+ 1093  ./backup.sh 
+ 1094  #!/bin/bash
+ 1095  source_dir=/root/devops/scripts/source_dir
+ 1096  backup_dir=/root/devops/scripts/backup_dir
+ 1097  function creat_backup { timestamp=$(date '+%Y-%m-%d-%H:%M:%S'); zip -r "${backup_dir}/backup$timestamp.zip" "${source_dir}"> /dev/null if [ $? -eq 0 ]; then echo "Backup created successfully"; echo "$timestamp"; else         echo "Backup was not performed for $timestamp"; fi; }
+ 1098  #creat_backup
+ 1099  #ls -t backup* | head -5
+ 1100  function rotetion {         backups=$(ls -t "backup_dir/backup"*.zip);         echo "$backups";         if [$backups -eq 5 ]; then                 remove= 5; }
+ 1101  vim backup.sh 
+ 1102  ./backup.sh 
+ 1103  vim backup.sh 
+ 1104  echo ((5+5))
+ 1105  echo "((5+5))"
+ 1106  5+5
+ 1107  vim backup.sh 
+ 1108  ./backup.sh 
+ 1109  vim backup.sh 
+ 1110  ./backup.sh 
+ 1111  vim backup.sh 
+ 1112  ./backup.sh 
+ 1113  vim backup.sh 
+ 1114  ./backup.sh 
+ 1115  ls -t
+ 1116  cd backup_dir/
+ 1117  ls -5
+ 1118  ls -t
+ 1119  ls -t -5
+ 1120  ls -t [-5]
+ 1121  echo ls -t
+ 1122  echo $(ls -t)
+ 1123  echo $(ls -t -5)
+ 1124  echo $(ls -t 0)
+ 1125  ls -t | awk 'print{-5}'
+ 1126  ls -t | awk 'print{$2}'
+ 1127  ls -t | awk '{print $2}'
+ 1128  ls -t {$0}
+ 1129  ls -t 
+ 1130  ls -t | head $[0,1]
+ 1131  ls -t | head -$[0,1]
+ 1132  ls -t | head -$[0..5]
+ 1133  ls -t | head -$[5]
+ 1134  ls -t | head -$[-5]
+ 1135  ls -t | head -$[5..10]
+ 1136  ls -t | head -$[5 .. 10]
+ 1137  ls -t | head -$[5..10]
+ 1138  vim backup.sh 
+ 1139  ls
+ 1140  cd
+ 1141  ls
+ 1142  cd devops/
+ 1143  ls
+ 1144  cd scripts/
+ 1145  ls
+ 1146  vim backup
+ 1147  vim backup.sh 
+ 1148  ./backup.sh 
+ 1149  ls
+ 1150  mv backupdir/ backup_dir
+ 1151  ./backup.sh 
+ 1152  ls
+ 1153  cd backup_dir/
+ 1154  ls
+ 1155  vim backup.sh 
+ 1156  cd ..
+ 1157  vim backup.sh 
+ 1158  ./backup.sh 
+ 1159  ls
+ 1160  cd backup_dir/
+ 1161  ls
+ 1162  rm backup.zip 
+ 1163  ls
+ 1164  cd ..
+ 1165  vim backup.sh 
+ 1166  ./backup.sh 
+ 1167  vim backup.sh 
+ 1168  ./backup.sh 
+ 1169  vim backup.sh 
+ 1170  ./backup.sh 
+ 1171  vim backup.sh 
+ 1172  ./backup.sh 
+ 1173  ls
+ 1174  cd backup_dir/
+ 1175  ls
+ 1176  cd ..
+ 1177  ls
+ 1178  vim backup.sh 
+ 1179  ./backup.sh 
+ 1180  vim backup.sh 
+ 1181  ./backup.sh 
+ 1182  vim backup.sh 
+ 1183  ./backup.sh 
+ 1184  ls
+ 1185  cd backup_dir/
+ 1186  ls
+ 1187  rm backup*
+ 1188  ls
+ 1189  cd ..
+ 1190  ./backup.sh 
+ 1191  ls
+ 1192  cd backup_dir/
+ 1193  ls
+ 1194  cd ..
+ 1195  ls
+ 1196  vim backup.sh 
+ 1197  ./backup.sh 
+ 1198  cd backup_dir/
+ 1199  ls -t
+ 1200  cd ..
+ 1201  ./backup.sh 
+ 1202  ls
+ 1203  cd backup_dir/
+ 1204  LS
+ 1205  ls
+ 1206  cd ..
+ 1207  vim backup.sh 
+ 1208  ./backup.sh 
+ 1209  cd backup_dir/
+ 1210  ls
+ 1211  ls -t
+ 1212  ls -t backup* | grep 
+ 1213  ls -t backup* | grap
+ 1214  ls -t backup* | grep
+ 1215  ls -t backup* | grep -n 5
+ 1216  ls -t | grep backup
+ 1217  ls -t | grep -n 5 backup 
+ 1218  ls -t | grep  backup -n 5
+ 1219  ls -t | grep  backup  -5
+ 1220  ls -t | grep  backup  -n5
+ 1221  ls -t | head -5
+ 1222  ls -t backup* | grep -n 5
+ 1223  ls -t backup* | grep -n 5 backup
+ 1224  cd ..
+ 1225  la
+ 1226  vim backup.sh 
+ 1227  ./backup.sh 
+ 1228  vim backup.sh 
+ 1229  ls -t backup* | grep -n 5
+ 1230  cd backup_dir/
+ 1231  cd ..
+ 1232  ls
+ 1233  vim backup.sh 
+ 1234  ./backup.sh 
+ 1235  vim backup.sh 
+ 1236  ls -t backup_dir/backup* | head -5
+ 1237  vim backup.sh 
+ 1238  ./backup.sh 
+ 1239  vim backup.sh 
+ 1240  ./backup.sh 
+ 1241  vim backup.sh 
+ 1242  ./backup.sh 
+ 1243  vim backup.sh 
+ 1244  ./backup.sh 
+ 1245  vim backup.sh 
+ 1246  ./backup.sh 
+ 1247  vim backup.sh 
+ 1248  ./backup.sh 
+ 1249  vim backup.sh 
+ 1250  ./backup.sh 
+ 1251  vim backup.sh 
+ 1252  ls
+ 1253  ls -t
+ 1254  cd backup_dir/
+ 1255  ls -t
+ 1256  ls -t | head {6..*}
+ 1257  ls -t | head -{6..*}
+ 1258  head
+ 1259  ls -t | head -[6..*]
+ 1260  ls -t | head [6..*]
+ 1261  ls -t | head [6..]
+ 1262  ls -t | head [6..7]
+ 1263  ls -t 
+ 1264  ls -t .drop(5)
+ 1265  vim backup.sh 
+ 1266  cd ..
+ 1267  vim backup.sh 
+ 1268  vim backup.sh 
+ 1269  ./backup.sh 
+ 1270  #!/bin/bash
+ 1271  source_dir=/root/devops/scripts/source_dir
+ 1272  backup_dir=/root/devops/scripts/backup_dir
+ 1273  function creat_backup { timestamp=$(date '+%Y-%m-%d-%H:%M:%S'); zip -r "${backup_dir}/backup$timestamp.zip" "${source_dir}"> /dev/null if [ $? -eq 0 ]; then echo "Backup created successfully"; echo "$timestamp"; else         echo "Backup was not performed for $timestamp"; fi; }
+ 1274  #creat_backup
+ 1275  #ls -t backup* | head -5
+ 1276  function rotetion {         backups=$(ls -t "backup_dir/backup"*.zip);         echo "$backups";         if [$backups -eq 5 ]; then                 remove= 5; }
+ 1277  vim backup.sh 
+ 1278  ./backup.sh 
+ 1279  vim backup.sh 
+ 1280  echo ((5+5))
+ 1281  echo "((5+5))"
+ 1282  5+5
+ 1283  vim backup.sh 
+ 1284  ./backup.sh 
+ 1285  vim backup.sh 
+ 1286  ./backup.sh 
+ 1287  vim backup.sh 
+ 1288  ./backup.sh 
+ 1289  vim backup.sh 
+ 1290  ./backup.sh 
+ 1291  ls -t
+ 1292  cd backup_dir/
+ 1293  ls -5
+ 1294  ls -t
+ 1295  ls -t -5
+ 1296  ls -t [-5]
+ 1297  echo ls -t
+ 1298  echo $(ls -t)
+ 1299  echo $(ls -t -5)
+ 1300  echo $(ls -t 0)
+ 1301  ls -t | awk 'print{-5}'
+ 1302  ls -t | awk 'print{$2}'
+ 1303  ls -t | awk '{print $2}'
+ 1304  ls -t {$0}
+ 1305  ls -t 
+ 1306  ls -t | head $[0,1]
+ 1307  ls -t | head -$[0,1]
+ 1308  ls -t | head -$[0..5]
+ 1309  ls -t | head -$[5]
+ 1310  ls -t | head -$[-5]
+ 1311  ls -t | head -$[5..10]
+ 1312  ls -t | head -$[5 .. 10]
+ 1313  ls -t | head -$[5..10]
+ 1314  ls -t | print -$[5..10]
+ 1315  vim backup.sh 
+ 1316  ls
+ 1317  cd
+ 1318  ls
+ 1319  cd devops/
+ 1320  ls
+ 1321  cd scripts/
+ 1322  ls
+ 1323  vim backup
+ 1324  vim backup.sh 
+ 1325  ./backup.sh 
+ 1326  ls
+ 1327  mv backupdir/ backup_dir
+ 1328  ./backup.sh 
+ 1329  ls
+ 1330  cd backup_dir/
+ 1331  ls
+ 1332  vim backup.sh 
+ 1333  cd ..
+ 1334  vim backup.sh 
+ 1335  ./backup.sh 
+ 1336  ls
+ 1337  cd backup_dir/
+ 1338  ls
+ 1339  rm backup.zip 
+ 1340  ls
+ 1341  cd ..
+ 1342  vim backup.sh 
+ 1343  ./backup.sh 
+ 1344  vim backup.sh 
+ 1345  ./backup.sh 
+ 1346  vim backup.sh 
+ 1347  ./backup.sh 
+ 1348  vim backup.sh 
+ 1349  ./backup.sh 
+ 1350  ls
+ 1351  cd backup_dir/
+ 1352  ls
+ 1353  cd ..
+ 1354  ls
+ 1355  vim backup.sh 
+ 1356  ./backup.sh 
+ 1357  vim backup.sh 
+ 1358  ./backup.sh 
+ 1359  vim backup.sh 
+ 1360  ./backup.sh 
+ 1361  ls
+ 1362  cd backup_dir/
+ 1363  ls
+ 1364  rm backup*
+ 1365  ls
+ 1366  cd ..
+ 1367  ./backup.sh 
+ 1368  ls
+ 1369  cd backup_dir/
+ 1370  ls
+ 1371  cd ..
+ 1372  ls
+ 1373  vim backup.sh 
+ 1374  ./backup.sh 
+ 1375  cd backup_dir/
+ 1376  ls -t
+ 1377  cd ..
+ 1378  ./backup.sh 
+ 1379  ls
+ 1380  cd backup_dir/
+ 1381  LS
+ 1382  ls
+ 1383  cd ..
+ 1384  vim backup.sh 
+ 1385  ./backup.sh 
+ 1386  cd backup_dir/
+ 1387  ls
+ 1388  ls -t
+ 1389  ls -t backup* | grep 
+ 1390  ls -t backup* | grap
+ 1391  ls -t backup* | grep
+ 1392  ls -t backup* | grep -n 5
+ 1393  ls -t | grep backup
+ 1394  ls -t | grep -n 5 backup 
+ 1395  ls -t | grep  backup -n 5
+ 1396  ls -t | grep  backup  -5
+ 1397  ls -t | grep  backup  -n5
+ 1398  ls -t | head -5
+ 1399  ls -t backup* | grep -n 5
+ 1400  ls -t backup* | grep -n 5 backup
+ 1401  cd ..
+ 1402  la
+ 1403  vim backup.sh 
+ 1404  ./backup.sh 
+ 1405  vim backup.sh 
+ 1406  ls -t backup* | grep -n 5
+ 1407  cd backup_dir/
+ 1408  cd ..
+ 1409  ls
+ 1410  vim backup.sh 
+ 1411  ./backup.sh 
+ 1412  vim backup.sh 
+ 1413  ls -t backup_dir/backup* | head -5
+ 1414  vim backup.sh 
+ 1415  ./backup.sh 
+ 1416  vim backup.sh 
+ 1417  ./backup.sh 
+ 1418  vim backup.sh 
+ 1419  ./backup.sh 
+ 1420  vim backup.sh 
+ 1421  ./backup.sh 
+ 1422  vim backup.sh 
+ 1423  ./backup.sh 
+ 1424  vim backup.sh 
+ 1425  ./backup.sh 
+ 1426  vim backup.sh 
+ 1427  ./backup.sh 
+ 1428  vim backup.sh 
+ 1429  ls
+ 1430  ls -t
+ 1431  cd backup_dir/
+ 1432  ls -t
+ 1433  ls -t | head {6..*}
+ 1434  ls -t | head -{6..*}
+ 1435  head
+ 1436  ls -t | head -[6..*]
+ 1437  ls -t | head [6..*]
+ 1438  ls -t | head [6..]
+ 1439  ls -t | head [6..7]
+ 1440  ls -t 
+ 1441  ls -t .drop(5)
+ 1442  vim backup.sh 
+ 1443  cd ..
+ 1444  vim backup.sh 
+ 1445  vim backup.sh 
+ 1446  ./backup.sh 
+ 1447  #!/bin/bash
+ 1448  source_dir=/root/devops/scripts/source_dir
+ 1449  backup_dir=/root/devops/scripts/backup_dir
+ 1450  function creat_backup { timestamp=$(date '+%Y-%m-%d-%H:%M:%S'); zip -r "${backup_dir}/backup$timestamp.zip" "${source_dir}"> /dev/null if [ $? -eq 0 ]; then echo "Backup created successfully"; echo "$timestamp"; else         echo "Backup was not performed for $timestamp"; fi; }
+ 1451  #creat_backup
+ 1452  #ls -t backup* | head -5
+ 1453  function rotetion {         backups=$(ls -t "backup_dir/backup"*.zip);         echo "$backups";         if [$backups -eq 5 ]; then                 remove= 5; }
+ 1454  vim backup.sh 
+ 1455  ./backup.sh 
+ 1456  vim backup.sh 
+ 1457  echo ((5+5))
+ 1458  echo "((5+5))"
+ 1459  5+5
+ 1460  vim backup.sh 
+ 1461  ./backup.sh 
+ 1462  vim backup.sh 
+ 1463  ./backup.sh 
+ 1464  vim backup.sh 
+ 1465  ./backup.sh 
+ 1466  vim backup.sh 
+ 1467  ./backup.sh 
+ 1468  ls -t
+ 1469  cd backup_dir/
+ 1470  ls -5
+ 1471  ls -t
+ 1472  ls -t -5
+ 1473  ls -t [-5]
+ 1474  echo ls -t
+ 1475  echo $(ls -t)
+ 1476  echo $(ls -t -5)
+ 1477  echo $(ls -t 0)
+ 1478  ls -t | awk 'print{-5}'
+ 1479  ls -t | awk 'print{$2}'
+ 1480  ls -t | awk '{print $2}'
+ 1481  ls -t {$0}
+ 1482  ls -t 
+ 1483  ls -t | head $[0,1]
+ 1484  ls -t | head -$[0,1]
+ 1485  ls -t | head -$[0..5]
+ 1486  ls -t | head -$[5]
+ 1487  ls -t | head -$[-5]
+ 1488  ls -t | head -$[5..10]
+ 1489  ls -t | head -$[5 .. 10]
+ 1490  ls -t | head -$[5..10]
+ 1491  ls -t | print -$[5..10]
+ 1492  ls -t | echo -$[5..10]
+ 1493  vim backup.sh 
+ 1494  ls
+ 1495  cd
+ 1496  ls
+ 1497  cd devops/
+ 1498  ls
+ 1499  cd scripts/
+ 1500  ls
+ 1501  vim backup
+ 1502  vim backup.sh 
+ 1503  ./backup.sh 
+ 1504  ls
+ 1505  mv backupdir/ backup_dir
+ 1506  ./backup.sh 
+ 1507  ls
+ 1508  cd backup_dir/
+ 1509  ls
+ 1510  vim backup.sh 
+ 1511  cd ..
+ 1512  vim backup.sh 
+ 1513  ./backup.sh 
+ 1514  ls
+ 1515  cd backup_dir/
+ 1516  ls
+ 1517  rm backup.zip 
+ 1518  ls
+ 1519  cd ..
+ 1520  vim backup.sh 
+ 1521  ./backup.sh 
+ 1522  vim backup.sh 
+ 1523  ./backup.sh 
+ 1524  vim backup.sh 
+ 1525  ./backup.sh 
+ 1526  vim backup.sh 
+ 1527  ./backup.sh 
+ 1528  ls
+ 1529  cd backup_dir/
+ 1530  ls
+ 1531  cd ..
+ 1532  ls
+ 1533  vim backup.sh 
+ 1534  ./backup.sh 
+ 1535  vim backup.sh 
+ 1536  ./backup.sh 
+ 1537  vim backup.sh 
+ 1538  ./backup.sh 
+ 1539  ls
+ 1540  cd backup_dir/
+ 1541  ls
+ 1542  rm backup*
+ 1543  ls
+ 1544  cd ..
+ 1545  ./backup.sh 
+ 1546  ls
+ 1547  cd backup_dir/
+ 1548  ls
+ 1549  cd ..
+ 1550  ls
+ 1551  vim backup.sh 
+ 1552  ./backup.sh 
+ 1553  cd backup_dir/
+ 1554  ls -t
+ 1555  cd ..
+ 1556  ./backup.sh 
+ 1557  ls
+ 1558  cd backup_dir/
+ 1559  LS
+ 1560  ls
+ 1561  cd ..
+ 1562  vim backup.sh 
+ 1563  ./backup.sh 
+ 1564  cd backup_dir/
+ 1565  ls
+ 1566  ls -t
+ 1567  ls -t backup* | grep 
+ 1568  ls -t backup* | grap
+ 1569  ls -t backup* | grep
+ 1570  ls -t backup* | grep -n 5
+ 1571  ls -t | grep backup
+ 1572  ls -t | grep -n 5 backup 
+ 1573  ls -t | grep  backup -n 5
+ 1574  ls -t | grep  backup  -5
+ 1575  ls -t | grep  backup  -n5
+ 1576  ls -t | head -5
+ 1577  ls -t backup* | grep -n 5
+ 1578  ls -t backup* | grep -n 5 backup
+ 1579  cd ..
+ 1580  la
+ 1581  vim backup.sh 
+ 1582  ./backup.sh 
+ 1583  vim backup.sh 
+ 1584  ls -t backup* | grep -n 5
+ 1585  cd backup_dir/
+ 1586  cd ..
+ 1587  ls
+ 1588  vim backup.sh 
+ 1589  ./backup.sh 
+ 1590  vim backup.sh 
+ 1591  ls -t backup_dir/backup* | head -5
+ 1592  vim backup.sh 
+ 1593  ./backup.sh 
+ 1594  vim backup.sh 
+ 1595  ./backup.sh 
+ 1596  vim backup.sh 
+ 1597  ./backup.sh 
+ 1598  vim backup.sh 
+ 1599  ./backup.sh 
+ 1600  vim backup.sh 
+ 1601  ./backup.sh 
+ 1602  vim backup.sh 
+ 1603  ./backup.sh 
+ 1604  vim backup.sh 
+ 1605  ./backup.sh 
+ 1606  vim backup.sh 
+ 1607  ls
+ 1608  ls -t
+ 1609  cd backup_dir/
+ 1610  ls -t
+ 1611  ls -t | head {6..*}
+ 1612  ls -t | head -{6..*}
+ 1613  head
+ 1614  ls -t | head -[6..*]
+ 1615  ls -t | head [6..*]
+ 1616  ls -t | head [6..]
+ 1617  ls -t | head [6..7]
+ 1618  ls -t 
+ 1619  ls -t .drop(5)
+ 1620  vim backup.sh 
+ 1621  cd ..
+ 1622  vim backup.sh 
+ 1623  vim backup.sh 
+ 1624  ./backup.sh 
+ 1625  #!/bin/bash
+ 1626  source_dir=/root/devops/scripts/source_dir
+ 1627  backup_dir=/root/devops/scripts/backup_dir
+ 1628  function creat_backup { timestamp=$(date '+%Y-%m-%d-%H:%M:%S'); zip -r "${backup_dir}/backup$timestamp.zip" "${source_dir}"> /dev/null if [ $? -eq 0 ]; then echo "Backup created successfully"; echo "$timestamp"; else         echo "Backup was not performed for $timestamp"; fi; }
+ 1629  #creat_backup
+ 1630  #ls -t backup* | head -5
+ 1631  function rotetion {         backups=$(ls -t "backup_dir/backup"*.zip);         echo "$backups";         if [$backups -eq 5 ]; then                 remove= 5; }
+ 1632  vim backup.sh 
+ 1633  ./backup.sh 
+ 1634  vim backup.sh 
+ 1635  echo ((5+5))
+ 1636  echo "((5+5))"
+ 1637  5+5
+ 1638  vim backup.sh 
+ 1639  ./backup.sh 
+ 1640  vim backup.sh 
+ 1641  ./backup.sh 
+ 1642  vim backup.sh 
+ 1643  ./backup.sh 
+ 1644  vim backup.sh 
+ 1645  ./backup.sh 
+ 1646  ls -t
+ 1647  cd backup_dir/
+ 1648  ls -5
+ 1649  ls -t
+ 1650  ls -t -5
+ 1651  ls -t [-5]
+ 1652  echo ls -t
+ 1653  echo $(ls -t)
+ 1654  echo $(ls -t -5)
+ 1655  echo $(ls -t 0)
+ 1656  ls -t | awk 'print{-5}'
+ 1657  ls -t | awk 'print{$2}'
+ 1658  ls -t | awk '{print $2}'
+ 1659  ls -t {$0}
+ 1660  ls -t 
+ 1661  ls -t | head $[0,1]
+ 1662  ls -t | head -$[0,1]
+ 1663  ls -t | head -$[0..5]
+ 1664  ls -t | head -$[5]
+ 1665  ls -t | head -$[-5]
+ 1666  ls -t | head -$[5..10]
+ 1667  ls -t | head -$[5 .. 10]
+ 1668  ls -t | head -$[5..10]
+ 1669  ls -t | print -$[5..10]
+ 1670  ls -t | echo -$[5..10]
+ 1671  ls -t | echo "-$[5..10]"
+ 1672  vim backup.sh 
+ 1673  ls
+ 1674  cd
+ 1675  ls
+ 1676  cd devops/
+ 1677  ls
+ 1678  cd scripts/
+ 1679  ls
+ 1680  vim backup
+ 1681  vim backup.sh 
+ 1682  ./backup.sh 
+ 1683  ls
+ 1684  mv backupdir/ backup_dir
+ 1685  ./backup.sh 
+ 1686  ls
+ 1687  cd backup_dir/
+ 1688  ls
+ 1689  vim backup.sh 
+ 1690  cd ..
+ 1691  vim backup.sh 
+ 1692  ./backup.sh 
+ 1693  ls
+ 1694  cd backup_dir/
+ 1695  ls
+ 1696  rm backup.zip 
+ 1697  ls
+ 1698  cd ..
+ 1699  vim backup.sh 
+ 1700  ./backup.sh 
+ 1701  vim backup.sh 
+ 1702  ./backup.sh 
+ 1703  vim backup.sh 
+ 1704  ./backup.sh 
+ 1705  vim backup.sh 
+ 1706  ./backup.sh 
+ 1707  ls
+ 1708  cd backup_dir/
+ 1709  ls
+ 1710  cd ..
+ 1711  ls
+ 1712  vim backup.sh 
+ 1713  ./backup.sh 
+ 1714  vim backup.sh 
+ 1715  ./backup.sh 
+ 1716  vim backup.sh 
+ 1717  ./backup.sh 
+ 1718  ls
+ 1719  cd backup_dir/
+ 1720  ls
+ 1721  rm backup*
+ 1722  ls
+ 1723  cd ..
+ 1724  ./backup.sh 
+ 1725  ls
+ 1726  cd backup_dir/
+ 1727  ls
+ 1728  cd ..
+ 1729  ls
+ 1730  vim backup.sh 
+ 1731  ./backup.sh 
+ 1732  cd backup_dir/
+ 1733  ls -t
+ 1734  cd ..
+ 1735  ./backup.sh 
+ 1736  ls
+ 1737  cd backup_dir/
+ 1738  LS
+ 1739  ls
+ 1740  cd ..
+ 1741  vim backup.sh 
+ 1742  ./backup.sh 
+ 1743  cd backup_dir/
+ 1744  ls
+ 1745  ls -t
+ 1746  ls -t backup* | grep 
+ 1747  ls -t backup* | grap
+ 1748  ls -t backup* | grep
+ 1749  ls -t backup* | grep -n 5
+ 1750  ls -t | grep backup
+ 1751  ls -t | grep -n 5 backup 
+ 1752  ls -t | grep  backup -n 5
+ 1753  ls -t | grep  backup  -5
+ 1754  ls -t | grep  backup  -n5
+ 1755  ls -t | head -5
+ 1756  ls -t backup* | grep -n 5
+ 1757  ls -t backup* | grep -n 5 backup
+ 1758  cd ..
+ 1759  la
+ 1760  vim backup.sh 
+ 1761  ./backup.sh 
+ 1762  vim backup.sh 
+ 1763  ls -t backup* | grep -n 5
+ 1764  cd backup_dir/
+ 1765  cd ..
+ 1766  ls
+ 1767  vim backup.sh 
+ 1768  ./backup.sh 
+ 1769  vim backup.sh 
+ 1770  ls -t backup_dir/backup* | head -5
+ 1771  vim backup.sh 
+ 1772  ./backup.sh 
+ 1773  vim backup.sh 
+ 1774  ./backup.sh 
+ 1775  vim backup.sh 
+ 1776  ./backup.sh 
+ 1777  vim backup.sh 
+ 1778  ./backup.sh 
+ 1779  vim backup.sh 
+ 1780  ./backup.sh 
+ 1781  vim backup.sh 
+ 1782  ./backup.sh 
+ 1783  vim backup.sh 
+ 1784  ./backup.sh 
+ 1785  vim backup.sh 
+ 1786  ls
+ 1787  ls -t
+ 1788  cd backup_dir/
+ 1789  ls -t
+ 1790  ls -t | head {6..*}
+ 1791  ls -t | head -{6..*}
+ 1792  head
+ 1793  ls -t | head -[6..*]
+ 1794  ls -t | head [6..*]
+ 1795  ls -t | head [6..]
+ 1796  ls -t | head [6..7]
+ 1797  ls -t 
+ 1798  ls -t .drop(5)
+ 1799  vim backup.sh 
+ 1800  cd ..
+ 1801  vim backup.sh 
+ 1802  vim backup.sh 
+ 1803  ./backup.sh 
+ 1804  #!/bin/bash
+ 1805  source_dir=/root/devops/scripts/source_dir
+ 1806  backup_dir=/root/devops/scripts/backup_dir
+ 1807  function creat_backup { timestamp=$(date '+%Y-%m-%d-%H:%M:%S'); zip -r "${backup_dir}/backup$timestamp.zip" "${source_dir}"> /dev/null if [ $? -eq 0 ]; then echo "Backup created successfully"; echo "$timestamp"; else         echo "Backup was not performed for $timestamp"; fi; }
+ 1808  #creat_backup
+ 1809  #ls -t backup* | head -5
+ 1810  function rotetion {         backups=$(ls -t "backup_dir/backup"*.zip);         echo "$backups";         if [$backups -eq 5 ]; then                 remove= 5; }
+ 1811  vim backup.sh 
+ 1812  ./backup.sh 
+ 1813  vim backup.sh 
+ 1814  echo ((5+5))
+ 1815  echo "((5+5))"
+ 1816  5+5
+ 1817  vim backup.sh 
+ 1818  ./backup.sh 
+ 1819  vim backup.sh 
+ 1820  ./backup.sh 
+ 1821  vim backup.sh 
+ 1822  ./backup.sh 
+ 1823  vim backup.sh 
+ 1824  ./backup.sh 
+ 1825  ls -t
+ 1826  cd backup_dir/
+ 1827  ls -5
+ 1828  ls -t
+ 1829  ls -t -5
+ 1830  ls -t [-5]
+ 1831  echo ls -t
+ 1832  echo $(ls -t)
+ 1833  echo $(ls -t -5)
+ 1834  echo $(ls -t 0)
+ 1835  ls -t | awk 'print{-5}'
+ 1836  ls -t | awk 'print{$2}'
+ 1837  ls -t | awk '{print $2}'
+ 1838  ls -t {$0}
+ 1839  ls -t 
+ 1840  ls -t | head $[0,1]
+ 1841  ls -t | head -$[0,1]
+ 1842  ls -t | head -$[0..5]
+ 1843  ls -t | head -$[5]
+ 1844  ls -t | head -$[-5]
+ 1845  ls -t | head -$[5..10]
+ 1846  ls -t | head -$[5 .. 10]
+ 1847  ls -t | head -$[5..10]
+ 1848  ls -t | print -$[5..10]
+ 1849  ls -t | echo -$[5..10]
+ 1850  ls -t | echo "-$[5..10]"
+ 1851  ls -t | echo "-$[5]"
+ 1852  ls -t
+ 1853  ls -t backup*
+ 1854  ls -tl backup*
+ 1855  ls -tl backup*:5
+ 1856  ls -tl backup* :5
+ 1857  cd ..
+ 1858  ./creat_user.sh 
+ 1859  ./backup.sh 
+ 1860  vim backup.sh 
+ 1861  ./backup.sh 
+ 1862  vim backup.sh 
+ 1863  ./backup.sh 
+ 1864  vim backup.sh 
+ 1865  ./backup.sh 
+ 1866  vim backup.sh 
+ 1867  ./backup.sh 
+ 1868  ls
+ 1869  cd backup_dir/
+ 1870  ls
+ 1871  cd ..
+ 1872  vim backup.sh 
+ 1873  ./backup.sh 
+ 1874  vim backup.sh 
+ 1875  ./backup.sh 
+ 1876  cd backup_dir/
+ 1877  ls
+ 1878  rm backup2024-07-1*
+ 1879  cd ..
+ 1880  vim backup.sh 
+ 1881  ./backup.sh 
+ 1882  cd backup_dir/
+ 1883  ls
+ 1884  cd backup_dir/
+ 1885  cd ..
+ 1886  ./backup.sh 
+ 1887  vim backup.sh 
+ 1888  ./backup.sh 
+ 1889  vim backup.sh 
+ 1890  ./backup.sh 
+ 1891  vim backup.sh 
+ 1892  ./backup.sh 
+ 1893  vim backup.sh 
+ 1894  ./backup.sh 
+ 1895  crontab
+ 1896  crontap
+ 1897  crontab -e
+ 1898  pwd
+ 1899  ls
+ 1900  corntab -r
+ 1901  crontab -e
+ 1902  cd backup_dir/
+ 1903  ls -t
+ 1904  sl -t
+ 1905  ls -t
+ 1906  cd ..
+ 1907  vim backup.sh 
+ 1908  ls -t
+ 1909  crontab -e
+ 1910  vim backup.sh 
+ 1911  cd ..
+ 1912  cat /etc/passwd
+ 1913  sudo user add -m guddu
+ 1914  sudo useradd -m guddu
+ 1915  useradd -m muna
+ 1916  useradd -m munna
+ 1917  cat /etc/passwd
+ 1918  su surya
+ 1919  pawwwd surya
+ 1920  passwd surya
+ 1921  su surya
+ 1922  cat /etc/passwd
+ 1923  usermod -aG ubuntu surya
+ 1924  su surya
+ 1925  SerialNumber
+ 1926  ls
+ 1927  GIT echo "# my_devops_nodbook" >> README.md
+ 1928  mkdir mydevops notes
+ 1929  cd mydevops/
+ 1930  git init
+ 1931  ls
+ 1932  cd ..
+ 1933  mkdir my_devops
+ 1934  cd my_devops/
+ 1935  gitinit
+ 1936  git init
+ 1937  git remote add origin https://github.com/vivektagare/my_devops_nodbook.git
+ 1938  git add README.md
+ 1939  echo "# my_devops_nodbook" >> README.md
+ 1940  ls
+ 1941  cat
+ 1942  git commit -m "first commit"
+ 1943  cd
+ 1944  cd devops/
+ 1945  ls
+ 1946  ls -l
+ 1947  chown root usra
+ 1948  chown ?
+ 1949  chown?
+ 1950  chown --help
+ 1951  chgrp surya \[file1..5\] 
+ 1952  ls -l \[file1..5\] 
+ 1953  chgrp surya root \[file1..5\] 
+ 1954  chgrp surya  \[file1..5\] 
+ 1955  ls -l \[file1..5\] 
+ 1956  chgrp root  \[file1..5\] 
+ 1957  ls
+ 1958  ssh -i "batc7Ohio.pem" ubuntu@ec2-18-117-176-218.us-east-2.compute.amazonaws.com
+ 1959  cd
+ 1960  cd devops/
+ 1961  l
+ 1962  ssh -i "batc7Ohio.pem" ubuntu@ec2-3-141-10-117.us-east-2.compute.amazonaws.com
+ 1963  ssh -i "batc7Ohio.pem" ubuntu@ec2-18-221-96-250.us-east-2.compute.amazonaws.com
+ 1964  cd
+ 1965  ls
+ 1966  cd
+ 1967  ls
+ 1968  cd my_devops/
+ 1969  git init
+ 1970  git branch
+ 1971  git branch -a
+ 1972  git -a
+ 1973  ls -a
+ 1974  git config --global user.name "vivektagare"
+ 1975  git config --global user.mail "vivektgare@gmail.com"
+ 1976  git branch -a
+ 1977  git remote add origin https://github.com/vivektagare/my_devops_nodbook.git
+ 1978  git branch
+ 1979  git checkout -b main
+ 1980  git brach
+ 1981  git branch
+ 1982  git branch -a
+ 1983  git checkout -b "main"
+ 1984  git branch
+ 1985  git add .
+ 1986  git status
+ 1987  ls
+ 1988  rm README.md 
+ 1989  ls
+ 1990  git status
+ 1991  ls
+ 1992  cd ..
+ 1993  ls
+ 1994  cd devops/
+ 1995  ls
+ 1996  cd shell/
+ 1997  ls
+ 1998  vim ping.sh
+ 1999  chmod +x ping.sh 
+ 2000  ./ping.sh 
+ 2001  ls
+ 2002  cd ..
+ 2003  ls
+ 2004  cd ..
+ 2005  cd devops/
+ 2006  git
+ 2007  git --version
+ 2008  apt update 
+ 2009  apt install git
+ 2010  git --version
+ 2011  ls
+ 2012  mkdir git_tutorial
+ 2013  cd git_tutorial/
+ 2014  mkdir devops-project-batch-7
+ 2015  ls
+ 2016  mkdir devops-practice-project
+ 2017  ls
+ 2018  cd devops-project-batch-7/
+ 2019  git init
+ 2020  ls
+ 2021  ls -a
+ 2022  ls -al
+ 2023  cd .git/
+ 2024  ls
+ 2025  cd ..
+ 2026  ls
+ 2027  touch laila.txt majanu.txt
+ 2028  ls
+ 2029  git status
+ 2030  git add.
+ 2031  git status
+ 2032  git add .
+ 2033  git stage
+ 2034  git status
+ 2035  git rm --cached
+ 2036  git status
+ 2037  git rm --cached laila.txt  majanu.txt 
+ 2038  ls
+ 2039  git status
+ 2040  git add .
+ 2041  git status
+ 2042  git cammit -m "lala amd majanu cammitted"
+ 2043  git status
+ 2044  git cammit -m "feat: added laila majnu"
+ 2045  git commit -m "feat: added laila majnu"
+ 2046  ls
+ 2047  git status
+ 2048  git log
+ 2049  ls
+ 2050  rm majanu.txt 
+ 2051  ls
+ 2052  git restore majanu.txt
+ 2053  ls
+ 2054  history
+ 2055  ls
+ 2056  history | tail -36
+ 2057  history | tail -35
+ 2058  history | tail -35:3
+ 2059  history | tail [-35]:3
+ 2060  history
+ 2061  history > all_cammands.txt

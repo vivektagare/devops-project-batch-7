@@ -1,0 +1,74 @@
+T Commands
+Getting & Creating Projects
+Command	Description
+git init	Initialize a local Git repository.
+git clone ssh://git@github.com/[username]/[repository-name].git	Create a local copy of a remote repository.
+Creating a New Repository on the Command Line
+sh
+Copy code
+echo "# my_devops_notebook" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vivektagare/my_devops_notebook.git
+git push -u origin main
+Pushing an Existing Repository to GitHub
+sh
+Copy code
+git remote add origin https://github.com/vivektagare/my_devops_notebook.git
+git branch -M main
+git push -u origin main
+Basic Snapshotting
+Command	Description
+git status	Check the status of the working directory and staging area.
+git add [file-name.txt]	Add a specific file to the staging area.
+git add -A	Add all new and changed files to the staging area.
+git commit -m "[commit message]"	Commit changes in the staging area with a descriptive message.
+git rm -r [file-name.txt]	Remove a file or directory from the working directory and staging area.
+Configuration
+Command	Description
+git config --global user.name "vivektagare"	Set the global username for Git commits.
+git config --global user.email "vivektagare@gmail.com"	Set the global email for Git commits.
+git config user.name "[name]"	Set the username for Git commits in the current repository.
+git config user.email "[email]"	Set the email for Git commits in the current repository.
+git config --global core.editor "[editor]"	Set the default text editor for Git.
+git config --global merge.tool "[tool]"	Set the default merge tool for Git.
+git config --list	List all the configuration settings.
+git config --global --unset [setting]	Unset a global configuration setting.
+Branching & Merging
+Command	Description
+git branch	List local branches, with an asterisk (*) denoting the current branch.
+git branch -a	List all branches, both local and remote.
+git branch [branch name]	Create a new branch.
+git branch -d [branch name]	Delete a branch.
+git push origin --delete [branch name]	Delete a remote branch.
+git checkout -b [branch name]	Create a new branch and switch to it.
+git checkout -b [branch name] origin/[branch name]	Clone a remote branch and switch to it.
+git branch -m [old branch name] [new branch name]	Rename a local branch.
+git checkout [branch name]	Switch to a different branch.
+git checkout -	Switch to the last checked-out branch.
+git checkout -- [file-name.txt]	Discard changes to a file.
+git merge [branch name]	Merge a branch into the active branch.
+git merge [source branch] [target branch]	Merge a source branch into a target branch.
+git stash	Stash changes in a dirty working directory.
+git stash list	List all stashed changesets.
+git stash pop	Apply the most recent stash and remove it from the stash list.
+git stash apply	Apply the most recent stash without removing it from the stash list.
+git stash drop	Remove the most recent stash from the stash list.
+git rebase [branch]	Reapply commits on top of another base tip.
+Sharing & Updating Projects
+Command	Description
+git push origin [branch name]	Push a branch to the remote repository.
+git push -u origin [branch name]	Push changes to the remote repository (and remember the branch).
+git push	Push changes to the remote repository (the current branch).
+git push origin --delete [branch name]	Delete a remote branch.
+git pull	Fetch and merge changes from the remote repository to the current branch.
+git pull origin [branch name]	Fetch and merge changes from the remote repository to the current branch.
+Inspection & Comparison
+Command	Description
+git log	View recent commits.
+git log --summary	View recent commits with summaries of changes.
+git diff [source branch] [target branch]	Preview changes before merging.
+
+
